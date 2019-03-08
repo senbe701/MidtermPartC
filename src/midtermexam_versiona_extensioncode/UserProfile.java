@@ -25,6 +25,11 @@ public class UserProfile
      * @param givenID the ID to assign to this user
      * @param givenGenre the users favourite genre
      */
+    
+    public UserProfile() {
+        
+    }
+    
     public UserProfile(String givenID, String givenGenre)
     {
         userID = givenID;
@@ -61,6 +66,11 @@ public class UserProfile
         this.genre = genre;
     }
     
+    public void printGenres() {
+        for (String genre1 : genres) {
+            System.out.println(genre1);
+        }
+    }
     
     
     
